@@ -1,5 +1,4 @@
 <html>
-
 <h1><strong>Vitalpointz IoT Core, Core-lite FAQs</strong></h1>
 <h3>Q. What is Vitalpointz IoT Core/Core-lite</h3>
 <p>Vitalpointz IoT Core/Core-lite is a managed cloud platform to administrate connected devices, IoT infrastructure and services.</p>
@@ -26,11 +25,11 @@
 <p>Min Spec: IoT Core-lite &ndash; 2 Core CPU, 4GB RAM, IoT Core &ndash; 4 Core CPU, 8GB RAM</p>
 <p>Optionally: Select the Private networking and monitoring</p>
 <p>Rest can be selected based on preferences of user</p>
-<p>First time login and initial config wizard: Once the droplet is available, login to it through SSH. For the first time login the SSH will run into an initial config wizard with questions appearing sequentially. In the end of the wizard, you&rsquo;ll get the URL to access the platform and login credential mailed to your mailbox.</p>
+<p><em>First time login and initial config wizard</em>: Once the droplet is available, login to it through SSH. For the first time login the SSH will run into an initial config wizard with questions appearing sequentially. In the end of the wizard, you&rsquo;ll get the URL to access the platform and login credential mailed to your mailbox.</p>
 <p>&nbsp;</p>
-<p>Onboarding IoT device: To use Vitalpointz IoT agent (VESPa), visit to the Github project of Vitalpointz IoT and download what is relevant to your device. Get one of the supported device for the agent or just get the node-red sketch to simulate few in your computer. Create equal no of devices you want to onboard or simulate in the platform. Take a note of login key or auth token generated and burn them into the devices/simulation program. Start the devices/simulation and voila!. You&rsquo;ll see the message received at the platform.</p>
+<p><em>Onboarding IoT device</em>: To use Vitalpointz IoT agent (VESPa), visit to the Github project of Vitalpointz IoT and download what is relevant to your device. Get one of the supported device for the agent or just get the node-red sketch to simulate few in your computer. Create equal no of devices you want to onboard or simulate in the platform. Take a note of login key or auth token generated and burn them into the devices/simulation program. Start the devices/simulation and voila!. You&rsquo;ll see the message received at the platform.</p>
 <p>&nbsp;</p>
-<p>Visualising messages, routing &amp; processing: Each device onboarded to the IoT Platform is assigned with a dedicated topic. Messages published to that specific topic and subsequent subtopics can be seen by selecting the topics in the message logger. Messages from multiple devices can be aggregated to node-red, in-cloud apps or other external message subscriber.</p>
+<p><em>Visualising messages, routing &amp; processing</em>: Each device onboarded to the IoT Platform is assigned with a dedicated topic. Messages published to that specific topic and subsequent subtopics can be seen by selecting the topics in the message logger. Messages from multiple devices can be aggregated to node-red, in-cloud apps or other external message subscriber.</p>
 <p>&nbsp;</p>
 <h3>Q. Why message forwarding &amp; routing needed? How is it done?</h3>
 <p>Most sensor and devices data need to be aggregated &amp; forwarded to applications and other subscribers. Routing takes care of the simplified forwarding management in the cloud. The routing rules are manged by rules engine in the cloud</p>
@@ -59,22 +58,32 @@
 <p>Virtual machine that is providing compute resources are on DigitalOcean&rsquo;s infrastructure. We rely on DigitalOcean to provide uptime and stability at the infrastructure level. App-level reliability is vitalpointz&rsquo; scope.</p>
 <p>&nbsp;</p>
 <h3>Q. Do you provide any SDK, Code samples or reference design for IoT use cases?</h3>
+<p>Yes, our device simulators are open sourced and they act as a reference for agent implementation.</p>
 <p>&nbsp;</p>
-<p>Q. Can I use my own domain, certificate or topic?</p>
+<h3>Q. Can I use my own domain, certificate or topic?</h3>
+<p>Not typically. Please reach out to us with your specific request.</p>
 <p>&nbsp;</p>
-<p>Q. Can I export all my data from the Vitalpointz IoT core?</p>
+<h3>Q. Can I export all my data from the Vitalpointz IoT core?</h3>
+<p>vitalpointz IOT Core/Core Lite does not have database service for your device data. You can consume device data/sensor data in hosted NodeRED service. Please use Out Port service to send data out to external storage/analytics service.&nbsp;</p>
 <p>&nbsp;</p>
-<p>Q. Can I run Vitalpointz IoT Core-lite on the smallest droplet i.e. 1CPU 1GB RAM in Digitalocean?</p>
+<h3>Q. Can I run Vitalpointz IoT Core-lite on the smallest droplet i.e. 1CPU 1GB RAM in Digitalocean?</h3>
+<p>Currently, vitalpointz IOT Core Lite requires minimum of 2 CPU, 4GB RAM droplet.</p>
 <p>&nbsp;</p>
-<p>Q. What are the languages supported for Vitalpointz IoT Core currently?</p>
+<h3>Q. What are the languages supported on Vitalpointz IoT Core currently?</h3>
+<p>You can write your IOT Business logic in JavaScript and use it in hosted NodeRED service.</p>
 <p>&nbsp;</p>
-<p>Q. Do you expose APIs to your backed? Do you allow to automate workflow?</p>
+<h3>Q. Do you expose APIs to your backed? Do you allow to automate workflow?</h3>
+<p>Yes, All of our back end services are usable using REST APIs. Please reach out to us with specific request. </p>
 <p>&nbsp;</p>
-<p>Q. I have a suggestion, want to report a defect. How to do it?</p>
+<h3>Q. I have a suggestion, want to report a defect. How to do it?</h3>
+<p>Yes, You can report your feature request/bugs in the form provided in the Web portal of IOT Core / Core Lite. You can find the bug raising tool under the top right hand burger menu. </p>
 <p>&nbsp;</p>
-<p>Q. What are the things can be tested with simulation?</p>
+<h3>Q. What are the things can be tested with simulation?</h3>
+<p>Simulators can be used to simulate IOT Devices.</p>
 <p>&nbsp;</p>
-<p>Q.What are the supported browser for Vitalpointz IoT Core Platform UI?</p>
+<h3>Q.What are the supported browser for Vitalpointz IoT Core Platform UI?</h3>
+<p>Our WebUI is supported in major browsers such as Firefox 66.0.5 (64bit), Safari 12.0.3 and Chrome <span style="color: #5f6368; font-family: Roboto, system-ui, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">74.0.3729.157 (Official Build) (64-bit)</span>.</p>
+<p>If you face difficulty in viewing in specific browser, please let us know.</p>
 <h3><br />Q. How to scale for more devices?</h3>
 <p>When you install a fresh IOT Core/Core Lite instance, 1024 device licenses are bundled with it. That means you can add up to 1024 devices without requiring additional license. If you want to onboard more devices, In IOT Core/Core Lite web portal, click on top right-hand corner burger menu, click &lsquo;License Manager&rsquo; and click &lsquo;Request License&rsquo; button. This will send a license request message to vitalpointz managed services team. We will generate a license and send you by email.</p>
 <p>&nbsp;</p>
