@@ -1,0 +1,145 @@
+<html>
+<h1><strong>Vitalpointz IoT Core, Core-lite FAQs</strong></h1>
+<h3>Q. What is Vitalpointz IoT Core/Core-lite</h3>
+<p>Vitalpointz IoT Core/Core-lite is a managed cloud platform to administrate connected devices, IoT infrastructure and services.</p>
+<h3><br /> Q.What are the features of Vitalpointz IoT Core</h3>
+<p>Vitalpointz IoT Core hosts an array of services for complete lifecycle management of IoT Devices and IoT Infrastructure. Essential Feature listed below</p>
+<p>&nbsp;</p>
+<p>Device Onboarding: Vitalpointz IoT Core platform facilitates easy onboarding of IoT devices to platform for microcontroller/microprocessor both agent and agentless way. Onboarding is supported through secure as well as unsecure channels.</p>
+<p>&nbsp;</p>
+<p>Support for IoT Messaging Protocols: Vitalpointz IoT Core platform supports standard IoT protocols like MQTT, HTTP &amp; WebSocket, both secure and unsecure variants.</p>
+<p>&nbsp;</p>
+<p>Message Processing &amp; Routing: Vitalpointz IoT core provides a bunch tools to process, consume the messages within the platform &amp; in-platform apps or forward to an external one or both.</p>
+<p>&nbsp;</p>
+<p>Security &amp; OTA: Vitalpointz IoT core can add a layer of security to devices with a secure communication channel even for plaintext-communication only devices and firewall rules at both edge and cloud.</p>
+<h3><br />Q.How Vitalpointz IoT Core-lite is different from IoT Core</h3>
+<p>IoT Core-lite is the best place to start to evaluate Vitalpointz offering. IoT Core-lite can work on a cloud instance of 2 core CPU &amp; 4 GB RAM which is effectively half to what IoT Core needs. IoT Core-lite don&rsquo;t have the OTA as a major feature.</p>
+<h3><br />Q. Is it available in my region?</h3>
+<p>Vitalpointz IoT Core currently available only through Digital Ocean&rsquo;s marketplace and will be available through Digitalocean&rsquo;s datacentre worldwide.</p>
+<p>&nbsp;</p>
+<h3>Q. How do I get started using Vitalpointz IoT Core</h3>
+<p>Sign up for an account with Digitalocean if you don&rsquo;t have one already. Use the referral link to get a trial credit of $100 for 2 months.</p>
+<p>&nbsp;</p>
+<p>Spinning a IoT core/core-lite in Digitalocean Cloud: Go to the Marketplace of Digitalocean, find Vitalpointz IoT Core/Core-lite and proceed with creation of a droplet with specifications given below</p>
+<p>Droplet: Standard</p>
+<p>Min Spec: IoT Core-lite &ndash; 2 Core CPU, 4GB RAM, IoT Core &ndash; 4 Core CPU, 8GB RAM</p>
+<p>Optionally: Select the Private networking and monitoring</p>
+<p>Rest can be selected based on preferences of user</p>
+<p>First time login and initial config wizard: Once the droplet is available, login to it through SSH. For the first time login the SSH will run into an initial config wizard with questions appearing sequentially. In the end of the wizard, you&rsquo;ll get the URL to access the platform and login credential mailed to your mailbox.</p>
+<p>&nbsp;</p>
+<p>Onboarding IoT device: To use Vitalpointz IoT agent (VESPa), visit to the Github project of Vitalpointz IoT and download what is relevant to your device. Get one of the supported device for the agent or just get the node-red sketch to simulate few in your computer. Create equal no of devices you want to onboard or simulate in the platform. Take a note of login key or auth token generated and burn them into the devices/simulation program. Start the devices/simulation and voila!. You&rsquo;ll see the message received at the platform.</p>
+<p>&nbsp;</p>
+<p>Visualising messages, routing &amp; processing: Each device onboarded to the IoT Platform is assigned with a dedicated topic. Messages published to that specific topic and subsequent subtopics can be seen by selecting the topics in the message logger. Messages from multiple devices can be aggregated to node-red, in-cloud apps or other external message subscriber.</p>
+<p>&nbsp;</p>
+<h3>Q. Why message forwarding &amp; routing needed? How is it done?</h3>
+<p>Most sensor and devices data need to be aggregated &amp; forwarded to applications and other subscribers. Routing takes care of the simplified forwarding management in the cloud. The routing rules are manged by rules engine in the cloud</p>
+<p>&nbsp;</p>
+<h3>Q. What are the things can be done with rules engine?</h3>
+<p>In addition to forwarding rule management, rules engine handles events &amp; actions. Rules engine can be configured to take an action like redirection, notification &amp; forwarding.</p>
+<p>&nbsp;</p>
+<h3>Q. What are the protocols and port numbers used by IoT Core?</h3>
+<p>The control communication across Vitalpointz IoT Core &amp; devices are through http and https protocols based on what device supports. Data communication port is different for every user and can be seen at the platform UI.</p>
+<p>&nbsp;</p>
+<h3>Q. How to get Vitalpointz mobile app?</h3>
+<p>Currently, the iOS mobile app in under testing. Please reach out to us to test the app.</p>
+<p>For Android app, please reach out to us we will share the apk.</p>
+<p>We will make an announcement once the apps are generally available.</p>
+<p>&nbsp;</p>
+<h3>Q.What is Node-Red?</h3>
+<p>Node-red is a flow-based visual programming tool built on Node.Js. In vitalpointz IoT Platform, the hosted Node-red can be leveraged to read message, plot charts, run business logic or forward to other services.</p>
+<p>&nbsp;</p>
+<h3>Q. What is out-port?</h3>
+<p>Out Port is a service under vitalpointz IOT Core/Core Lite using which you can export your device data or locally/programmatically generated data to external 3-rd party service.</p>
+<p>&nbsp;</p>
+<h3>Q. What protocol / interface Out-Port service uses?</h3>
+<p>Currently, Out Port Service uses REST API. It supports PUT, DELETE, GET and POST methods.</p>
+<p>&nbsp;</p>
+<h3>Q. What is the uptime/SLA of Vitalpointz IoT Core</h3>
+<p>Virtual machine that is providing compute resources are on DigitalOcean&rsquo;s infrastructure. We rely on DigitalOcean to provide uptime and stability at the infrastructure level. App-level reliability is vitalpointz&rsquo; scope.</p>
+<p>&nbsp;</p>
+<h3>Q. Do you provide any SDK, Code samples or reference design for IoT use cases?</h3>
+<p>&nbsp;</p>
+<p>Q. Can I use my own domain, certificate or topic?</p>
+<p>&nbsp;</p>
+<p>Q. Can I export all my data from the Vitalpointz IoT core?</p>
+<p>&nbsp;</p>
+<p>Q. Can I run Vitalpointz IoT Core-lite on the smallest droplet i.e. 1CPU 1GB RAM in Digitalocean?</p>
+<p>&nbsp;</p>
+<p>Q. What are the languages supported for Vitalpointz IoT Core currently?</p>
+<p>&nbsp;</p>
+<p>Q. Do you expose APIs to your backed? Do you allow to automate workflow?</p>
+<p>&nbsp;</p>
+<p>Q. I have a suggestion, want to report a defect. How to do it?</p>
+<p>&nbsp;</p>
+<p>Q. What are the things can be tested with simulation?</p>
+<p>&nbsp;</p>
+<p>Q.What are the supported browser for Vitalpointz IoT Core Platform UI?</p>
+<h3><br />Q. How to scale for more devices?</h3>
+<p>When you install a fresh IOT Core/Core Lite instance, 1024 device licenses are bundled with it. That means you can add up to 1024 devices without requiring additional license. If you want to onboard more devices, In IOT Core/Core Lite web portal, click on top right-hand corner burger menu, click &lsquo;License Manager&rsquo; and click &lsquo;Request License&rsquo; button. This will send a license request message to vitalpointz managed services team. We will generate a license and send you by email.</p>
+<p>&nbsp;</p>
+<h3>Q. What are the types of devices supported?</h3>
+<p>There is no specific restriction on the type of device that can connect to IOT Core/Core Lite.</p>
+<p>However, the agent is made available for specific hardware platforms. We encourage you to port the Agent on your hardware. Simulators, that are open sourced can be a good reference for implementing your own agent on your hardware.</p>
+<p>&nbsp;</p>
+<p>Simulators are simple flows on NodeRED, that can be executed from you virtual machine or laptop.</p>
+<p>&nbsp;</p>
+<h3>Q. What are the charges post trial period?</h3>
+<p>When you sign-up newly on DigitalOcean using our referral link, you will receive $100 credit for a period of 60 days. Post this period, you will be charged by DigitalOcean for the usage as per the plan. Please refer to DigitalOcean&rsquo;s control panel.</p>
+<p>&nbsp;</p>
+<h3>Q. My device not listed in your supported devices list of VESPa agent. Can I still use it with Vitalpointz IoT Core/Core-lite?</h3>
+<p>My sensors don&rsquo;t have TCP/IP stack or can&rsquo;t connect to internet. Is there a way to send data generated to Vitalpointz IoT platform? !!Bluetooth LE, Zigbee, LORA</p>
+<p>&nbsp;</p>
+<p>Q. I am currently using a IoT Core/Hub from a different cloud vendor. IS there a simple way to migrate to Vitalpointz IoT Platform?</p>
+<h3><br />Q. How do you ensure the confidentiality &amp; integrity of the data sent by the sensors?</h3>
+<p>Vitalpointz IOT Core/Core Lite offers MQTT over TLS and HTTPS as standard and basic interfaces for your device to publish/subscribe messages to the platform. Certificates are issued for each device protecting individual device.</p>
+<p>&nbsp;</p>
+<h3>Q.My devices are not TLS capable. Is there a way to publish/susbcribe using plain text interfaces?</h3>
+<p>Yes, we support MQTT plaintext and HTTP interfaces. However, you need to enable this explicitly. User should be added, enable the unsecure access privilege for that user to allow unsecure access. We highly recommend you to use TLS wherever possible.</p>
+<h3>Q. Do you store my data? Do you have access to my data?</h3>
+<p>No. We do not store your device data.</p>
+<p>Your device data reaches your instance of IOT Core/IOT Core Lite. You can choose to consume it on the droplet using hosted NodeRED tool or forward to external service using Out Port service.</p>
+<p>&nbsp;</p>
+<h3>Q. I have misconfigured my Org Name/email/something else? What can I do to correct it?</h3>
+<p>When you spin up a droplet with vitalpointz IOT Core/Core Lite, you will be asked to enter the details such as org name and email id. The instance is created with the name you have provided. There is no way you can edit these basic info. Please destroy the droplet and recreate afresh.</p>
+<h3><br />Q. I am unable to login to IOT Core/Core Lite web portal. What to do?</h3>
+<p>Try clicking on Forgot Password Link to retrieve your password. If your web UI shows errors even if you provide right login credentials, click &lsquo;Trouble Logging in?&rsquo; link. This will generate a support ticket to vitalpointz managed services team. We will check your instance and reach out to you.</p>
+<h3><br />Q. How do I access my droplet?</h3>
+<p>You would have created the droplet in DigitalOcean with your SSH key. You will have corresponding Private Key in your laptop or VM from where you want to access the droplet. Following command will give secure CLI access to your droplet.</p>
+<p>&nbsp;</p>
+<p><em>ssh-i your_priv.key root@IP_Address</em></p>
+<h3><br />Q. I have said &lsquo;yes&rsquo; to monitoring of my IOT Core instance. Does this mean vitalpointz employees can access my droplet remotely?</h3>
+<p>No.</p>
+<p>No one can access your droplet without your SSH private key. Please keep your private key safe and secure.</p>
+<h3><br />Q. What exactly is monitored when I allow during installation?</h3>
+<p>We collect performance data such as CPU, RAM and I/O utilization, uptime of various containers and processes.</p>
+<p>We do NOT collect user identity, device data, Rules and your code written inside hosted NodeRED tool.</p>
+<h3><br />Q. What is VESPA?</h3>
+<p>VESPA stands for Vitalpointz Edge Service Platform Agent. They are device agents that run on IOT Devices, Gateways etc.</p>
+<p>&nbsp;</p>
+<h3>Q. What are the variants of VESPA available?</h3>
+<p>Agent software comes in following variants:</p>
+<p>VESPA-L : Linux variant, Runs as a user process in Linux</p>
+<p>VESPA-G : Gateway variant available in 2 editions. As an appliance and as virtual box image</p>
+<p>VESPA-U: Microcontroller variant, available as arduino sketches and Node-RED flows that simulate IOT devices.</p>
+<p>VESPA-A: Android variant</p>
+<h3><br />Q. Is VESPA open source?</h3>
+<p>We are committed to make our VESPA open source as much as possible. Currently,</p>
+<p>Following agent variants are Open sourced under MIT license.</p>
+<p>VESPA-U and Device simulators that run on NodeRED.</p>
+<h3><br />Q. Is there a way to simulate one or many devices?</h3>
+<p>Yes. It is possible to simulate one or many devices. In fact, this is the best way to learn device authentication procedure and how vitalpointz IOT Core treats devices.</p>
+<p>Our simulators are open sourced under MIT license. They are runnable under NodeRED.</p>
+<p>You need to install a NodeRED in you VM or laptop, import the flows and follow the steps provided.</p>
+<h3><br />Q. How do I download the VESPA software / simulators?</h3>
+<p>Log into your droplet that runs vitalpointz IOT Core/Core Lite. Add Device under Device Tab.</p>
+<p>Click &lsquo;download image&rsquo; menu under Device panel. This will open a separate page or start to download the image depending on the variant.</p>
+<h3><br />Q. Is my IOT Core/Core Lite web portal secured? Do I need to provide my own certificate?</h3>
+<p>Your instance of IOT Core/IOT Core Lite Web UI is secured by Letsencrypt certificate. You do not need to purchase or bring your own certificate.</p>
+<h3><br />Q. Do I need to configure DNS or Letsencrypt myself?</h3>
+<p>No. When you spin up a droplet with vitalpointz IOT Core/Core Lite, automatically a subdomain is created, and DNS configured appropriately. Let&rsquo;sencrypt certificates are generated and provisioned on your instance. So, you do not need to do anything.</p>
+<h3><br />Q. Do I need to renew Let&rsquo;sencrypt certificates manually?</h3>
+<p>No. Certificate renewal is automatically done. So, you do not need to do anything.</p>
+<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+</html>
