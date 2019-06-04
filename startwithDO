@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> vitalpointz IoT Getting Started with DigitalOcean </title>
+<style media="screen">
+    body {
+      padding: 24px;
+      margin:0 15vw;
+      font-family: sans-serif;
+    }
+  </style>
+  <head>
+  <link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
+<body>
+<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
+<p>&nbsp;</p>
+
+<h1>Getting Started with DigitalOcean</h1>
+<h4>For New Users</h4>
+<p>&nbsp;</p>
+<h3>Step by Steo Guide for Signing Up with DigitalOcean with a Promo Code to Recevie Free Credit of $50 for 1Year</h3>
+<p>&nbsp;</p>
+<h4>STEP 1</h4>
+<p>1. Visit https://cloud.digitalocean.com/registrations/new</p>
+<p>2. Provide your full name, a valid email address and a password</p>
+<p>3. Optionally you can sign up with Google Authentication</p>
+<p>&nbsp;</p>
+<h4>STEP 2</h4>
+<p>1. You&rsquo;ll receive an email from Digitalocean asking to confirm your email by clicking on a link.</p>
+<p>2. Click on the link in the email and you will be forwarded to the next page</p>
+<p>&nbsp;</p>
+<h4>STEP 3</h4>
+<p><span data-contrast="auto">1. You need to </span><span data-contrast="auto">provide your</span> <span data-contrast="auto">Credit card details. For Non-American cards, international transaction must be enabled.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto">2. Fill in your billing address &amp; phone number.&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto">3. Upon clicking on Save card button, an amount will be charged to your card which will later be refunded. This charge is only for validating the payment method.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p>&nbsp;</p>
+<h4><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">STEP 4</span></h4>
+<p><span data-contrast="auto">1. Optionally fill your preferences in project goals or skip directly to the </span><span data-contrast="auto">Digitalocean</span><span data-contrast="auto"> control interface.&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto">2. Expand the &ldquo;Account&rdquo; tab in the sidebar &amp; click on billing sub-tab</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto">3. Scroll down in the billing to the end of the page&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto">4. Look for promo code section</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto">5. Input &ldquo;</span><span data-contrast="auto">vpointz</span><span data-contrast="auto">&rdquo; without the quotes in the textbox and click on apply code</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp; </span></p>
+<p><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">6.&nbsp;</span><span data-contrast="auto">You&rsquo;ll see a popup in the top-right corner &ldquo;Promocode Successfully applied&rdquo;</span></p>
+<p><span data-contrast="auto">7.&nbsp;</span><span data-contrast="auto">Now scroll up the billing page to the beginning to see the available credit </span><span data-contrast="auto">in your account.&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<h4 aria-level="1"><span data-contrast="auto">Note</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:480,&quot;335559739&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></h4>
+<ul style="list-style-type: disc;">
+<li><span data-contrast="auto">This </span><span data-contrast="auto">$50 </span><span data-contrast="auto">credit is valid for 12 months.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="auto">This credit can be used for any service across&nbsp;</span><span data-contrast="auto">Digitalocean</span><span data-contrast="auto">.</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="auto">Once the credit is fully consuming, </span><span data-contrast="auto">Digitalocean</span><span data-contrast="auto"> will start billing on your credit card</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="auto">For evaluation/learning purpose, it is highly recommended to create a droplet while trying out a service. Once done, destroy it. Leaving it running or even shut down state keep incurring charges.&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="auto">Though the cost is mentioned largely on monthly charges, actually billing happens hourly basis. Hence its always wise to destroy a droplet while not using and pay for the hours while trying out the application.&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="auto">It is possible to deactivate an account to avoid the possibilities of billing after learning is over. Just go Account &gt; Profile </span><span data-contrast="auto">and click on &ldquo;Deactivate Account&rdquo;. Confirm to the popup and the account will be deactivated. All the resources will be wiped off and no charges should occur hereafter.&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="auto">If you wish to come back, you can reactivate the account by loin with the same email &amp; password later.&nbsp;</span></li>
+</ul>
+<h3 aria-level="1">&nbsp;</h3>
+<h3 aria-level="1"><span data-contrast="auto">Starting-off with Vitalpointz IoT Core-lite&nbsp;</span><span data-ccp-props="{&quot;134233279&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:480,&quot;335559739&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></h3>
+<p><span data-contrast="auto">Follow the </span><a href="https://judepragash.github.io/vitalpointzIOT_Docs/"><span data-contrast="none">link</span></a><span data-contrast="auto"> for a simple step-by-step guide to spin off a Vitalpointz IoT Core-lite and get a hands on experience using </span><span data-contrast="auto">a</span><span data-contrast="auto"> simulators or real devices.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559731&quot;:720,&quot;335559739&quot;:200,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<h2>About vitalpointz,Inc</h2>
+<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
+<p>For more information about our product please check our product documentation here. </p>
+<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
+
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+</body>
+</html>
