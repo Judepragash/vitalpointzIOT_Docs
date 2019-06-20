@@ -10,25 +10,23 @@ font-family: sans-serif;
 <head>
 <link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
 <body>
-<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
-<html>
+	<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
 <div>
-<h3><strong>vitalpointz Device Model</strong></h3>
-<p>&nbsp;In order to onboard and manage the IoT Devices, Following are the major phases the device should go through &ndash; &nbsp;&nbsp;</p>
+<div>
+<h3><strong>vitalpointz Device Types </strong></h3>
+</div>
+</div>
+<div>
+<p>Vitalpointz IoT Core/Core Lite supports three kinds of devices. They are</p>
 <ul>
-<li>Device registration</li>
-<li>Device Onboarding</li>
-<li>Device Removal</li>
+<li>Fog Node</li>
+<li>IoT Device</li>
+<li>Virtual Device</li>
 </ul>
-<p>&nbsp;</p>
-<p>When a new device is registered, vitalpointz IoT Core / Core Lite does following step for the device.</p>
-<ol>
-<li>A unique Device Id and Device Topic is created</li>
-<li>Device certificate &ndash; Private Key and Certificate are created</li>
-<li>Based on the user selection, the Topic is whitelisted at the MQTT Broker.</li>
-</ol>
-</div>
-<div>
+<p><em>Fog Node</em>: Fog Node is typically a server or communication gateway such as wifi access point with compute resource. Fog Nodes run portion of cloud platform functions such as MQTT broker service etc. It can provide connectivity service to Devices connecting to it. Fog Nodes act as client to Cloud Platform and Server for devices under it. Fog Nodes run some of the cloud platform microservices. Device Authentication service is kept with Cloud Platform for security reasons. In other words, irrespective of whether the devices are under a Fog Node OR directly connected to Cloud Platform, they are authenticated at the Cloud level.&nbsp;</p>
+<p>Vitalpointz provides Operating System based on OpenWRT for Whitebox wifi access points and virtual box image.</p>
+<p><em>IoT Device</em>: IoT devices are the ones that read data from sensor and transmit them to external server such as MQTT Broker or REST Server. IoT Device can be &lsquo;parented&rsquo; to Cloud directly or to the Fog Node. &nbsp;</p>
+<p>Virtual Device: In simplest form, virtual device are REST clients that can receive data from third party webservices and inject them as messages into IoT Core/Core Lite. Then the IoT business logic can combine/corelate with sensor data to implement powerful business logics.</p>
 <p>&nbsp;</p>
 </div>
 <div>
@@ -49,12 +47,4 @@ font-family: sans-serif;
 <div>
 <p><strong>&nbsp;</strong></p>
 </div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2>About vitalpointz,Inc</h2>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-<p>For more information about our product please check our product documentation here.</p>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-<p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
 </body></html>
