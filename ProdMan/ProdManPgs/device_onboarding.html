@@ -1,60 +1,77 @@
+<!DOCTYPE html>
+<html>
 <head>
-<title> vitalpointz IoT Core Manual - Device Model </title>
-<style media="screen">
-body {
-padding: 24px;
-margin:0 15vw;
-font-family: sans-serif;
+<title> vitalpointz IoT Core Manual </title>
+<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+.menu a {
+  background-color:#FFFFFF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:75%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:right;
+  width:3%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
 </style>
-<head>
-<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
-<body>
-<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
-<html>
-<div>
-<h3><strong>vitalpointz Device Model</strong></h3>
-<p>&nbsp;In order to onboard and manage the IoT Devices, Following are the major phases the device should go through &ndash; &nbsp;&nbsp;</p>
-<ul>
-<li>Device registration</li>
-<li>Device Onboarding</li>
-<li>Device Removal</li>
-</ul>
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
 <p>&nbsp;</p>
-<p>When a new device is registered, vitalpointz IoT Core / Core Lite does following step for the device.</p>
-<ol>
-<li>A unique Device Id and Device Topic is created</li>
-<li>Device certificate &ndash; Private Key and Certificate are created</li>
-<li>Based on the user selection, the Topic is whitelisted at the MQTT Broker.</li>
-</ol>
-</div>
+<p></p>
+<div style="background-color: #ffffff; padding: 2px; text-align: center;">
 <div>
-<p>&nbsp;</p>
+<p><img style="width: 200px; margin: 3px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" align="center" /></p>
 </div>
-<div>
-<h2>About vitalpointz,Inc</h2>
+<h2>vitalpointz IoT Core/Core Lite User Manual</h2>
 </div>
-<div>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-</div>
-<div>
-<p>For more information about our product please check our product documentation here.</p>
-</div>
-<div>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-</div>
-<div>
-<p>&nbsp;</p>
-</div>
-<div>
-<p><strong>&nbsp;</strong></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2>About vitalpointz,Inc</h2>
+<div style="overflow: auto;">
+<div class="menu"><a href="#">Introduction to IoT Core</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_model.html">vitalpointz Device Model</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_types.html">Device Types</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_registration.html">Device Registration</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_agents.html">Device Agents</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_onboarding.html">Device On-Boarding</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_monitoring.html">Device Monitoring</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_deletion.html">Device Deletion</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_security.html">Device Security</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_connectivity.html">Device Connectivity</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/debugging.html">Debugging / Logging </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/rules_engine.html">Rules Engine</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/notifications.html">Notifications</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/processing_iot_sensor_data.html">Processing IoT Data</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/outport_service.html">OutPort </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/user_management.html">User Management</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/platform_security.html">Platform Security</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/raising_bugs.html">Raising Bugs</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/license_management.html">License Management</a></div>
+<h3><strong>Device OnBoarding</strong></h3>
+<p>There are two ways by which IoT devices can be on-boarded.</p>
+<p><strong>Agent Access </strong></p>
+<p>This involves vEPSA (vitalpointz Edge Service Platform Agent) software or SDK needs to be installed or implemented in the Device Code. This method is highly recommended as the Agent automates fetching of device certificate, device id and device whitelisted-topic.</p>
+<p>&nbsp;<strong>Agent-less Devices Access</strong></p>
+<p>In a scenario where the device code cannot be integrated with vESPA, this method is useful.</p>
+<p>When a device is registered, device topic may be configured to whitelist. Once whitelisted, the device can send MQTT messages using the whitelisted topic (without the certificate).</p>
+
+<h3>About vitalpointz,Inc</h3>
 <p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
 <p>For more information about our product please check our product documentation here.</p>
 <p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
 <p>&nbsp;</p>
 <p><strong>&nbsp;</strong></p>
-</body></html>
+
+<div class="right">&nbsp;</div>
+</div>
+
+
+<div style="background-color: #fff; text-align: center; padding: 10px; margin-top: 7px;">&copy; copyright, vitalpointz Inc.</div>
