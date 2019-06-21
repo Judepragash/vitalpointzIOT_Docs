@@ -81,7 +81,7 @@
 <p>&nbsp;</p>
 <p>Note: Blocked Device will be able to make TCP connection to MQTT Service. Only the message is dropped after inspecting the topic.</p>
 <p>&nbsp;</p>
-<p><strong>Revoking/Re-Issuing Certificates</strong> Sometimes user might want to suspend the device by disallowing it even to make TCP Connection. In such scenarios, Certificate Revocation feature will be helpful. By invoking this option, the device certificate is added into CRL file of the MQTT server. Resulting in TCP Connection failing when the Device attempts to make a connection. Reissuing the certificate will reverse the process and issue new certificate. When the Device reboots VESPA runs as part of device startup process, VESPA downloads new certificates. Thus, the Device continues normal operation.</p>
+<p><strong>Revoking/Re-Issuing Certificates</strong> Sometimes user might want to suspend the device by disallowing it even to make TCP Connection. In such scenarios, Certificate Revocation feature will be helpful. By invoking this option, the device certificate is added into CRL file of the MQTT server. Resulting in TCP Connection failing when the Device attempts to make a connection. Reissuing the certificate will reverse the process and issue new certificate. When the Device reboots vESPA runs as part of device startup process, vESPA downloads new certificates. Thus, the Device continues normal operation.</p>
 <p>&nbsp;</p>
 <p><img src="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManImg/5%20Device%20Security/3.%20Device%20Cert%20Revoke.png" alt="" width="800" height="419" /></p> 
 
