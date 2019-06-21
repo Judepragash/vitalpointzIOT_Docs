@@ -69,10 +69,6 @@
 <p>&nbsp;</p>
 <p>Plain text interfaces such as HTTP and MQTT plaintext are provided to support the constrained devices. These interfaces need to be enabled specifically whereas all TLS based interface services are enabled by default.</p>
 
-<p>&nbsp;</p>
-<p><strong>Revoking/Re-Issuing Certificates</strong> Sometimes user might want to suspend the device by disallowing it even to make TCP Connection. In such scenarios, Certificate Revocation feature will be helpful. By invoking this option, the device certificate is added into CRL file of the MQTT server. Resulting in TCP Connection failing when the Device attempts to make a connection. Reissuing the certificate will reverse the process and issue new certificate. When the Device reboots VESPA runs as part of device startup process, VESPA downloads new certificates. Thus, the Device continues normal operation.</p>
-<p>&nbsp;</p>
-<p>&lt;insert image3&gt;</p>
 
 <div class="right">&nbsp;</div>
 </div>
