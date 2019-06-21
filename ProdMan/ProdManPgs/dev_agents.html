@@ -1,60 +1,89 @@
+<!DOCTYPE html>
+<html>
 <head>
-<title> vitalpointz IoT Core Manual - Device Model </title>
-<style media="screen">
-body {
-padding: 24px;
-margin:0 15vw;
-font-family: sans-serif;
+<title> vitalpointz IoT Core Manual </title>
+<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+.menu a {
+  background-color:#FFFFFF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:75%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:right;
+  width:3%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
 </style>
-<head>
-<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
-<body>
-<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
-<html>
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
+<p>&nbsp;</p>
+<p></p>
+<div style="background-color: #ffffff; padding: 2px; text-align: center;">
 <div>
-<h3><strong>vitalpointz Device Model</strong></h3>
-<p>&nbsp;In order to onboard and manage the IoT Devices, Following are the major phases the device should go through &ndash; &nbsp;&nbsp;</p>
+<p><img style="width: 200px; margin: 3px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" align="center" /></p>
+</div>
+<h2>vitalpointz IoT Core/Core Lite User Manual</h2>
+</div>
+<div style="overflow: auto;">
+<div class="menu"><a href="#">Introduction to IoT Core</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_model.html">vitalpointz Device Model</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_types.html">Device Types</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_registration.html">Device Registration</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_agents.html">Device Agents</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_onboarding.html">Device On-Boarding</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_monitoring.html">Device Monitoring</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_deletion.html">Device Deletion</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_security.html">Device Security</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_connectivity.html">Device Connectivity</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/debugging.html">Debugging / Logging </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/rules_engine.html">Rules Engine</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/notifications.html">Notifications</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/processing_iot_sensor_data.html">Processing IoT Data</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/outport_service.html">OutPort </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/user_management.html">User Management</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/platform_security.html">Platform Security</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/raising_bugs.html">Raising Bugs</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/license_management.html">License Management</a></div>
+<h3><strong>Device Agents (vESPA)</strong></h3>
+<p>Vitalpointz makes various device agents available as opensource and free to download and modify. The variants of Agents (also called vESPA &ndash; vitalpointz Edge Service Platform Agent) available are</p>
 <ul>
-<li>Device registration</li>
-<li>Device Onboarding</li>
-<li>Device Removal</li>
+<li>ESP01</li>
+<li>NodeMCU</li>
+<li>Linux Process</li>
+<li>OpenWRT based Fog OS</li>
+<li>Device Simulator written as Node RED flows</li>
+<li>Device Simulator written as Bash script</li>
+<li>Android vESPA</li>
 </ul>
 <p>&nbsp;</p>
-<p>When a new device is registered, vitalpointz IoT Core / Core Lite does following step for the device.</p>
-<ol>
-<li>A unique Device Id and Device Topic is created</li>
-<li>Device certificate &ndash; Private Key and Certificate are created</li>
-<li>Based on the user selection, the Topic is whitelisted at the MQTT Broker.</li>
-</ol>
-</div>
-<div>
+<p>Note: The list is constantly updated. Please check with vitalpointz support team for the latest list.</p>
+<p>These download link for the agents are provided in the device card menu.</p>
+<p>&lt;insert image&gt;</p>
 <p>&nbsp;</p>
-</div>
-<div>
-<h2>About vitalpointz,Inc</h2>
-</div>
-<div>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-</div>
-<div>
-<p>For more information about our product please check our product documentation here.</p>
-</div>
-<div>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-</div>
-<div>
+<p>Function of the Agent varies based on the device type. In its simplest form, the job of the agent is to implement Device Authentication and receive the Private Key,Certificate and Topic meant for the Device to establish secure communication with the server. These authentication calls are made using HTTPS REST API. The Private Key and Certificates are downloaded over HTTPS connection.</p>
 <p>&nbsp;</p>
-</div>
-<div>
-<p><strong>&nbsp;</strong></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2>About vitalpointz,Inc</h2>
+<p>If the Device is not capable of performing HTTPS Authentication Calls, equivalent plain text HTTP APIs are also provided. However, the private key and certificates are not provided over plain text HTTP API but Topic is provided to enable further plain text communication.</p>
+
+<h3>About vitalpointz,Inc</h3>
 <p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
 <p>For more information about our product please check our product documentation here.</p>
 <p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
 <p>&nbsp;</p>
 <p><strong>&nbsp;</strong></p>
-</body></html>
+
+<div class="right">&nbsp;</div>
+</div>
+
+
+<div style="background-color: #fff; text-align: center; padding: 10px; margin-top: 7px;">&copy; copyright, vitalpointz Inc.</div>
