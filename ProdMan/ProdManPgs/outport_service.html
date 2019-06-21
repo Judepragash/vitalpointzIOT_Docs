@@ -1,60 +1,96 @@
+<!DOCTYPE html>
+<html>
 <head>
-<title> vitalpointz IoT Core Manual - Device Model </title>
-<style media="screen">
-body {
-padding: 24px;
-margin:0 15vw;
-font-family: sans-serif;
+<title> vitalpointz IoT Core Manual </title>
+<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+.menu a {
+  background-color:#FFFFFF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:75%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:right;
+  width:3%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
 </style>
-<head>
-<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
-<body>
-<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
-<html>
-<div>
-<h3><strong>vitalpointz Device Model</strong></h3>
-<p>&nbsp;In order to onboard and manage the IoT Devices, Following are the major phases the device should go through &ndash; &nbsp;&nbsp;</p>
-<ul>
-<li>Device registration</li>
-<li>Device Onboarding</li>
-<li>Device Removal</li>
-</ul>
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
 <p>&nbsp;</p>
-<p>When a new device is registered, vitalpointz IoT Core / Core Lite does following step for the device.</p>
-<ol>
-<li>A unique Device Id and Device Topic is created</li>
-<li>Device certificate &ndash; Private Key and Certificate are created</li>
-<li>Based on the user selection, the Topic is whitelisted at the MQTT Broker.</li>
-</ol>
-</div>
+<p></p>
+<div style="background-color: #ffffff; padding: 2px; text-align: center;">
 <div>
+<p><img style="width: 200px; margin: 3px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" align="center" /></p>
+</div>
+<h2>vitalpointz IoT Core/Core Lite User Manual</h2>
+</div>
+<div style="overflow: auto;">
+<div class="menu"><a href="#">Introduction to IoT Core</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_model.html">vitalpointz Device Model</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_types.html">Device Types</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_registration.html">Device Registration</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_agents.html">Device Agents</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_onboarding.html">Device On-Boarding</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_monitoring.html">Device Monitoring</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_deletion.html">Device Deletion</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_security.html">Device Security</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_connectivity.html">Device Connectivity</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/debugging.html">Debugging / Logging </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/rules_engine.html">Rules Engine</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/notifications.html">Notifications</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/processing_iot_sensor_data.html">Processing IoT Data</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/outport_service.html">OutPort </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/user_management.html">User Management</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/platform_security.html">Platform Security</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/raising_bugs.html">Raising Bugs</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/license_management.html">License Management</a></div>
+<h3><strong>OutPort Service - Exporting IoT Data to 3<sup>rd</sup> party service</strong></h3>
+<p>IoT Device / Fog Node data as-is, or processed output or any platform generated events can be transferred out to one or many external 3<sup>rd</sup> party services using OutPort Service of IoT Core/Core Lite Platform.</p>
 <p>&nbsp;</p>
-</div>
-<div>
-<h2>About vitalpointz,Inc</h2>
-</div>
-<div>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-</div>
-<div>
-<p>For more information about our product please check our product documentation here.</p>
-</div>
-<div>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-</div>
-<div>
+<p>This generally involves two step process. (a) Setup End point on OutPort tab (b) Add Rules under Rules Engine to forward event/ user defined function generated data / Device Sensor data to pre-configured OutPort node.</p>
 <p>&nbsp;</p>
+<p><strong>Setting up OutPort Node under Outport Tab</strong></p>
+<p>&nbsp;</p>
+<p>OutPort can be setup under OutPort tab.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image1&gt;</p>
+<p>&nbsp;</p>
+<p>This version of cloud platform supports REST as the transport mechanism. It supports four methods of HTTP protocol namely, POST, PUT,GET and DELETE.</p>
+<p>&nbsp;</p>
+<p>&nbsp;Example below shows setting up a POST call with a Basic authentication method.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image2&gt;</p>
+<p>&nbsp;</p>
+<p>Once submitted, the OutPort Node is created. &nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Wiring OutPort to Event </strong></p>
+<p>Connecting the source of Event to the OutPort Node is done using Rules Engine. For example, in order to send a device message directly to external service, use &lsquo;User Defined&rsquo; as source event and OutPort Service as &lsquo;forward to&rsquo; destination.&nbsp; Select the appropriate OutPort Node that is setup in the previous step as a receiver of the event.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image3&gt;</p>
+<p>&nbsp;</p>
+<p><strong>Monitoring OutPort</strong></p>
+<p>OutPort Tab shows the list of already configured OutPort Nodes.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image4&gt;</p>
+<p>These nodes can be clicked to get the detailed information in the slider. The slider provides the breakup of the return code of the OutPort Node.</p>
+<p>&nbsp;</p>
+<p>Note: Return Code 1 means internal error in executing the API call.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image5&gt;</p>
+
+<div class="right">&nbsp;</div>
 </div>
-<div>
-<p><strong>&nbsp;</strong></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2>About vitalpointz,Inc</h2>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-<p>For more information about our product please check our product documentation here.</p>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-<p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
-</body></html>
+
+
+<div style="background-color: #fff; text-align: center; padding: 10px; margin-top: 7px;">&copy; copyright, vitalpointz Inc.</div>
