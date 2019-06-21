@@ -1,60 +1,101 @@
+<!DOCTYPE html>
+<html>
 <head>
-<title> vitalpointz IoT Core Manual - Device Model </title>
-<style media="screen">
-body {
-padding: 24px;
-margin:0 15vw;
-font-family: sans-serif;
+<title> vitalpointz IoT Core Manual </title>
+<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+.menu a {
+  background-color:#FFFFFF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:75%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:right;
+  width:3%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
 </style>
-<head>
-<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
-<body>
-<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
-<html>
-<div>
-<h3><strong>vitalpointz Device Model</strong></h3>
-<p>&nbsp;In order to onboard and manage the IoT Devices, Following are the major phases the device should go through &ndash; &nbsp;&nbsp;</p>
-<ul>
-<li>Device registration</li>
-<li>Device Onboarding</li>
-<li>Device Removal</li>
-</ul>
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
 <p>&nbsp;</p>
-<p>When a new device is registered, vitalpointz IoT Core / Core Lite does following step for the device.</p>
-<ol>
-<li>A unique Device Id and Device Topic is created</li>
-<li>Device certificate &ndash; Private Key and Certificate are created</li>
-<li>Based on the user selection, the Topic is whitelisted at the MQTT Broker.</li>
-</ol>
-</div>
+<p></p>
+<div style="background-color: #ffffff; padding: 2px; text-align: center;">
 <div>
-<p>&nbsp;</p>
+<p><img style="width: 200px; margin: 3px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" align="center" /></p>
 </div>
-<div>
-<h2>About vitalpointz,Inc</h2>
+<h2>vitalpointz IoT Core/Core Lite User Manual</h2>
 </div>
-<div>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-</div>
-<div>
-<p>For more information about our product please check our product documentation here.</p>
-</div>
-<div>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-</div>
-<div>
-<p>&nbsp;</p>
-</div>
-<div>
+<div style="overflow: auto;">
+<div class="menu"><a href="#">Introduction to IoT Core</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_model.html">vitalpointz Device Model</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_types.html">Device Types</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_registration.html">Device Registration</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_agents.html">Device Agents</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_onboarding.html">Device On-Boarding</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_monitoring.html">Device Monitoring</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_deletion.html">Device Deletion</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_security.html">Device Security</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_connectivity.html">Device Connectivity</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/debugging.html">Debugging / Logging </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/rules_engine.html">Rules Engine</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/notifications.html">Notifications</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/processing_iot_sensor_data.html">Processing IoT Data</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/outport_service.html">OutPort </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/user_management.html">User Management</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/platform_security.html">Platform Security</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/raising_bugs.html">Raising Bugs</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/license_management.html">License Management</a></div>
+<p><strong>Platform Security</strong></p>
 <p><strong>&nbsp;</strong></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h2>About vitalpointz,Inc</h2>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-<p>For more information about our product please check our product documentation here.</p>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-<p>&nbsp;</p>
+<p>Vitalpointz IoT Core/Core Lite platform is fortified with several security features. Following list provides outline of some of the security features implemented by the platform.</p>
+<p>For IoT Device Security features, see chapter &lsquo;Device Security&rsquo;</p>
 <p><strong>&nbsp;</strong></p>
-</body></html>
+<p><strong>Firewalls</strong></p>
+<p>The virtual machine (called droplet in digital ocean) that runs IoT Core/Core Lite image implements firewall rules that opens only the required ports and closes all other ports.</p>
+<p>Following are ports open</p>
+<p>80/TCP &amp; 443/TCP: User Access</p>
+<p>10001/TCP &ndash; 10005/TCP: Device Access</p>
+<p>8080/TCP &amp; 9100/TCP: for Monitoring</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>API Rate-limits</strong></p>
+<p>The cloud platform exposes REST API endpoints using few subdomains. API Rate-limits are applied to protect the resources behind the endpoint.&nbsp; Different subdomains have different limits in order to facilitate the differing API load requirement from different consumer types such as webUI/Device etc.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>JWT Token</strong></p>
+<p>Most of the APIs protected by Authorized API access. Tokens are issued to API consumer based on valid user name/password. Tokens have expiry timeout, which gets reset whenever there is a successful API access. Token itself is encrypted.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Audit Logs</strong></p>
+<p>The Cloud platform generates events on particular occurrence. All these events are captured and stored on audit log subsystem.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image1&gt;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Privilege based Access Control </strong></p>
+<p>See chapter: user management</p>
+<p><strong>&nbsp;</strong></p>
+<h3><strong>HTTPS based on Letsencrypt Certificate</strong></h3>
+<p>The platform UI does not provide HTTP Access. HTTPS is the only and default option. The HTTPS service leverages Letsencrypt service to protect the portal. Letsencrypt certificate needs to be periodically updated. This update process is done, new certificate is downloaded into the customer instance of IoT Core/Core Lite periodically whenever required. This update process is delivered by vMIST server (vitalpointz Managed IoT Service).</p>
+<p>&nbsp;</p>
+<p><strong>DDoS &amp; DNSSEC</strong></p>
+<p>DDoS and DNSSEC service can be added to customer instance on request using vitalpointz&rsquo; partner. Please reach out to us <a href="mailto:support@vitalpointz.net">support@vitalpointz.net</a> if you require these services to be enabled on your IoT Core/Core Lite instance.</p>
+<p>&nbsp;<strong>&nbsp;</strong></p>
+<p><strong>Raising Bug </strong></p>
+<p>User can request a new feature, functionality or report a bug from within the web UI. The tool to raise a bug can be found here.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image 1&gt;</p>
+<p>&nbsp;</p>
+<p>&lt;insert image 2&gt;</p>
+
+<div class="right">&nbsp;</div>
+</div>
+
+
+<div style="background-color: #fff; text-align: center; padding: 10px; margin-top: 7px;">&copy; copyright, vitalpointz Inc.</div>
