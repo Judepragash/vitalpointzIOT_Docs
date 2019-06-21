@@ -55,31 +55,13 @@
 </div>
 <div style="overflow: auto;">
 <div class="menu"><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdDoc.html">Introduction to IoT Core</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_model.html">vitalpointz Device Model</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_types.html">Device Types</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_registration.html">Device Registration</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_agents.html">Device Agents</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_onboarding.html">Device On-Boarding</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_monitoring.html">Device Monitoring</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_deletion.html">Device Deletion</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_security.html">Device Security</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_connectivity.html">Device Connectivity</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/debugging.html">Debugging / Logging </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/rules_engine.html">Rules Engine</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/notifications.html">Notifications</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/processing_iot_sensor_data.html">Processing IoT Data</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/outport_service.html">OutPort </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/user_management.html">User Management</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/platform_security.html">Platform Security</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/raising_bugs.html">Raising Bugs</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/license_management.html">License Management</a></div>
-<h3><strong>Device Monitoring</strong></h3>
-<p>Devices that are already Added are listed under &lsquo;Device&rsquo; Tab.&nbsp; The devices are shown in a hierarchical group view. These groups are logical names provided while added device. If no group name is given while adding device, the device can be found under &lsquo;default&rsquo; group. Device group can be deleted with just a click under group level menu.</p>
-<p><img src="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManImg/2a%20Device%20Onboarding/1%20Device%20Tab.png" alt="" width="800" height="419" /></p> 
-<p>&nbsp;</p>
-<p>Every device is represented as a card under group card. Each card is color coded that reflect the state of the device. Following are some of the color codes used</p>
-<p>&nbsp;</p>
-<p>Grey: Device Registered, not no-boarded</p>
-<p>Yellow: Device has authenticated</p>
-<p>Green: Device sends messages</p>
-<p>Red: Device is presumed to be dead. That is the device has not sent any message in the last 24hours.</p>
-<p>Light Red: Device is in Blocked State.</p>
-<p>&nbsp;</p>
-<p><img src="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManImg/2a%20Device%20Onboarding/2%20Device%20listing%20menu.png" alt="" width="800" height="419" /></p>
-<p>&nbsp;</p>
-<p>Each card representing a device displays two dynamic fields apart from color code, device id and Device name. The dynamic info displayed are &ndash;</p>
-<ul>
-<li>last message received time stamp. This is the time when the device message was received by the platform</li>
-<li>Message count, this represents the accumulated message count the device has sent since the day start</li>
-</ul>
-<p>&nbsp;</p>
-<p>Note: These dynamic fields are updated closer to real-time. That means, as and when the device data is received the time stamp and count are updated and sent to UI for displaying.</p>
-<p>&nbsp;</p>
-<p>Clicking on device card bring up a slider component on the screen. The slider shows more data about the device. The Slider shows the report of message activity of the selected device.</p>
-<p>&nbsp;</p>
-<p>Actions can be taken on the device using slider-menu on the device card.</p>
+<h3><strong>Device OnBoarding</strong></h3>
+<p>There are two ways by which IoT devices can be on-boarded.</p>
+<p>&nbsp;<strong>Agent Access </strong></p>
+<p>This involves vEPSA (vitalpointz Edge Service Platform Agent) software or SDK needs to be installed or implemented in the Device Code. This method is highly recommended as the Agent automates fetching of device certificate, device id and device whitelisted-topic.</p>
+<p><strong>Agent-less Devices Access</strong></p>
+<p>In a scenario where the device code cannot be integrated with vESPA, this method is useful.</p>
+<p>When a device is registered, device topic may be configured to whitelist. Once whitelisted, the device can send MQTT messages using the whitelisted topic (without the certificate).</p>
 
 <div class="right">&nbsp;</div>
 </div>
