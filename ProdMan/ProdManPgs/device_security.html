@@ -1,60 +1,90 @@
+<!DOCTYPE html>
+<html>
 <head>
-<title> vitalpointz IoT Core Manual - Device Model </title>
-<style media="screen">
-body {
-padding: 24px;
-margin:0 15vw;
-font-family: sans-serif;
+<title> vitalpointz IoT Core Manual </title>
+<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+.menu a {
+  background-color:#FFFFFF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:75%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff;
+  float:right;
+  width:3%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
 </style>
-<head>
-<link rel="shortcut icon" href="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/favicon.ico" type="image/x-icon">
-<body>
-<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
-<html>
-<div>
-<h3><strong>vitalpointz Device Model</strong></h3>
-<p>&nbsp;In order to onboard and manage the IoT Devices, Following are the major phases the device should go through &ndash; &nbsp;&nbsp;</p>
-<ul>
-<li>Device registration</li>
-<li>Device Onboarding</li>
-<li>Device Removal</li>
-</ul>
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
 <p>&nbsp;</p>
-<p>When a new device is registered, vitalpointz IoT Core / Core Lite does following step for the device.</p>
-<ol>
-<li>A unique Device Id and Device Topic is created</li>
-<li>Device certificate &ndash; Private Key and Certificate are created</li>
-<li>Based on the user selection, the Topic is whitelisted at the MQTT Broker.</li>
-</ol>
-</div>
+<p></p>
+<div style="background-color: #ffffff; padding: 2px; text-align: center;">
 <div>
-<p>&nbsp;</p>
+<p><img style="width: 200px; margin: 3px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" align="center" /></p>
 </div>
-<div>
-<h2>About vitalpointz,Inc</h2>
+<h2>vitalpointz IoT Core/Core Lite User Manual</h2>
 </div>
-<div>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-</div>
-<div>
-<p>For more information about our product please check our product documentation here.</p>
-</div>
-<div>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
-</div>
-<div>
-<p>&nbsp;</p>
-</div>
-<div>
+<div style="overflow: auto;">
+<div class="menu"><a href="#">Introduction to IoT Core</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_model.html">vitalpointz Device Model</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_types.html">Device Types</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_registration.html">Device Registration</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/dev_agents.html">Device Agents</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_onboarding.html">Device On-Boarding</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_monitoring.html">Device Monitoring</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_deletion.html">Device Deletion</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_security.html">Device Security</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/device_connectivity.html">Device Connectivity</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/debugging.html">Debugging / Logging </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/rules_engine.html">Rules Engine</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/notifications.html">Notifications</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/processing_iot_sensor_data.html">Processing IoT Data</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/outport_service.html">OutPort </a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/user_management.html">User Management</a> <a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/platform_security.html">Platform Security</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/raising_bugs.html">Raising Bugs</a><a href="https://judepragash.github.io/vitalpointzIOT_Docs/ProdMan/ProdManPgs/license_management.html">License Management</a></div>
+<h3><strong>Device Security</strong></h3>
+<p>&nbsp; Vitalpointz IoT Core/Core Lite offers variety of device security mechanisms. &nbsp;They are &ndash;</p>
 <p><strong>&nbsp;</strong></p>
-</div>
+<p><strong>SSL VPN</strong> vitalpointz IoT Core/Core Lite bundles OpenVPN (an open source VPN server) service with it. Every Fog Node establishes VPN Tunnel and transacts with the Cloud platform over VPN.</p>
 <p>&nbsp;</p>
+<p><strong>Secure connectivity </strong>vitalpointz IoT Core/Core Lite provides secure connectivity services by default. Every device that is Registered/ Added under vitalpointz IOT Core/Core Lite is generated with a private Key and Certificate. These are used to connect to MQTT service over TLS. For the devices incapable of connecting using MQTT over TLS, HTTPS REST based message publishing APIs are provided to send messages to Cloud Platform securely.</p>
 <p>&nbsp;</p>
-<h2>About vitalpointz,Inc</h2>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
-<p>For more information about our product please check our product documentation here.</p>
-<p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
+<p><strong>Mutual Authentication</strong> Device certificate is used by server to verify the authenticity of the device, while device verifies Server authenticity using Root Certificate.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Topic Whitelisting</strong> Each Device is allocated with a top-level topic name space by vitalpointz IoT Core/Core Lite Platform. The topic looks like <em>v/</em><em>yaP4HaCFg. </em>A leading character and a unique alphanumeric short string separated by a <em>/</em>. Device programmers are free to create any number of sub topics under the name space, however they are not allowed to use totally new parent topic.</p>
+<p>&nbsp;</p>
+<p>&nbsp; For example, a topic of <em>v/</em><em>yaP4HaCFg/sensor1/field1 &nbsp;</em>is allowed.</p>
+<p>&nbsp;</p>
+<p>The top level device topic is whitelisted and any other topic is not allowed to pass the Platform. The Device topic allocated to the device can be viewed by clicking on the device card on the Web Ui. The Slider component shows the topic.</p>
+<p>&nbsp;</p>
+<p>&lt;Insert Image1&gt;</p>
 <p>&nbsp;</p>
 <p><strong>&nbsp;</strong></p>
-</body></html>
+<p><strong>Blocking/Unblocking Device </strong>User can block the device by clicking on the menu item of the card representing the device. This has the effect of black listing the device topic. Unblocking removes the black listing and allows the device topic to be forwarded again. This is useful when the device is connecting using insecure connectivity service, revoking certificate will not have any effect in that situation.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image2&gt;</p>
+<p>&nbsp;</p>
+<p>Note: Blocked Device will be able to make TCP connection to MQTT Service. Only the message is dropped after inspecting the topic.</p>
+<p>&nbsp;</p>
+<p><strong>Revoking/Re-Issuing Certificates</strong> Sometimes user might want to suspend the device by disallowing it even to make TCP Connection. In such scenarios, Certificate Revocation feature will be helpful. By invoking this option, the device certificate is added into CRL file of the MQTT server. Resulting in TCP Connection failing when the Device attempts to make a connection. Reissuing the certificate will reverse the process and issue new certificate. When the Device reboots VESPA runs as part of device startup process, VESPA downloads new certificates. Thus, the Device continues normal operation.</p>
+<p>&nbsp;</p>
+<p>&lt;insert image3&gt;</p>
+
+<div class="right">&nbsp;</div>
+</div>
+
+
+<div style="background-color: #fff; text-align: center; padding: 10px; margin-top: 7px;">&copy; copyright, vitalpointz Inc.</div>
