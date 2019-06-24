@@ -18,8 +18,8 @@
 
 <p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" /></p>
 <h2>Getting Started with DigitalOcean</h2>
-<p>Thank you for choosing vitalpointz Secure IOT Core/ IOT Core Lite edition.</p>
-<p>This document will walk you through the installation and bring up of the vitalpointz Secure IOT Core /Core Lite in a Digital Ocean droplet. Please refer to User Manual for concepts and how to use vitalpointz IOT Core/Core Lite software.For all Management related information, refer to CLI User guide.</p>
+<p>Thank you for choosing vitalpointz Secure IOT Core/ IoT Core Lite edition.</p>
+<p>This document will walk you through the installation and bring up of the vitalpointz Secure IoT Core /Core Lite in a DigitalOcean droplet. Please refer to User Manual for concepts and how to use vitalpointz IoT Core/Core Lite software.For all Management related information, refer to CLI User guide.</p>
   <h2>&nbsp;</h2>
 <hr />
   <p><h3> vitalpointz IoT Core / Core Lite Product Documentation </h3> </p>
@@ -36,16 +36,16 @@
   <p> Get $50,1 year<a href="https://judepragash.github.io/vitalpointzIOT_Docs/startwithDO.html"> Free Credit! <a> </p> 
  <hr />
 <h2>&nbsp;</h2>
-<h2>Installing vitalpointz Secure IOT Core /Core Lite on DigitalOcean</h2>
+<h2>Installing vitalpointz Secure IoT Core /Core Lite on DigitalOcean</h2>
 <p>Software release available under DigitalOcean&rsquo;s marketplace and its minimum resource requirement are provided below</p>
-<p><strong>Software Edition</strong> : Vitalpointz Secure IOT Core Lite v1.0.0</p>
+<p><strong>Software Edition</strong> : Vitalpointz Secure IoT Core Lite v1.0.1</p>
 <p><strong>Min.Resource Requirement</strong> : Droplet with 2Core, 4GB RAM and 80GB Disk</p>
-<p>Note: Every new instance comes loaded with 1024 device licenses. This means upto 1024 devices can be added and on-boarded on the IOT software without purchasing additional license.</p>
+<p>Note: Every new instance comes loaded with 1024 device licenses. This means upto 1024 devices can be added and on-boarded on the IoT software without purchasing additional license.</p>
 <h3>Step 1 : Spin up a Droplet</h3>
 <p>a) Login to your <a href="https://cloud.digitalocean.com/" rel="nofollow">DigitalOcean</a> cloud account. </p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/DO-marketplace.png" alt="" width="800" height="419" /></p>
-<p>b) Select vitalpointz IOT Core Lite card and click on &lsquo;Create Droplet&rsquo;</p>
-<p>c) Select the droplet resource sizing. A standard droplet with 2 Core CPU &amp; 4GB RAM is the smallest Iot Core lite needs.</p>
+<p>b) Select vitalpointz IoT Core Lite card and click on &lsquo;Create Droplet&rsquo;</p>
+<p>c) Select the droplet resource sizing. A standard droplet with 2 Core CPU &amp; 4GB RAM is the smallest IoT Core lite needs.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/DO-Droplet%20Size.png" alt="" width="800" height="419" /></p>
 <p>d) Adding Block storage is optional.</p>
 <p>e) Select the datacenter region of your preference.</p>
@@ -56,26 +56,26 @@
 <p>h) Create droplet Enter One Droplet and provide the host name of your choice.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/Do-Finalize.png" alt="" width="800" height="419" /></p>
 <p>Click Create.</p>
-<h3>Step 2: Setup up the IOT Service</h3>
+<h3>Step 2: Setup up the IoT Service</h3>
 <p>a) The droplet is listed once the droplet is ready.</p>
 <p>copy the IP address of the droplet.</p>
 <p>b) login to droplet from your console using SSH.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-SSH2droplet.png" alt="" /></p>
 <p>type 'yes' when prompted by SSH.</p>
-<p>c) The SSH shell presents customized Shell of vitalpointz secure IOT Core/Core Lite.</p>
+<p>c) The SSH shell presents customized Shell of vitalpointz secure IoT Core/Core Lite.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-install.png" alt="" width="800" height="419" /></p>
-<p>type Install to install the IOT Core/Core Lite Software.</p>
+<p>type Install to install the IoT Core/Core Lite Software.</p>
 <p>d) Accept EULA by typing 'yes' when prompted.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-EulaAccept.png" alt="" width="800" height="419" /></p>
-<p>e) Follow the prompt and provide questions. short organization name will be used to construct web address for your instance IOT Core/Core Lite. <img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-Install_root%20creation.png" alt="" /></p>
+<p>e) Follow the prompt and provide questions. short organization name will be used to construct web address for your instance IoT Core/Core Lite. <img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-Install_root%20creation.png" alt="" /></p>
 <p>f) Enter 'yes' to allow vitalpointz to monitor the performance of the IOT core/Core Lite instance and also to provide periodic software updates and certificate management services.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-AppMonitoring.png" alt=""  /></p>
 <p>g) Review your entries one last time before setting up the service</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO-Install%20final%20Confirm.png" alt="" /></p>
-<p>type 'yes'. Now, the IOT core/core lite software will be brought up.</p>
+<p>type 'yes'. Now, the IoT core/core lite software will be brought up.</p>
 <p>h) When Installation and setting up services are completed, following info will be displayed.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO%20Completed.png" alt="" /></p>
-<p>Now, the your instance of IOT Core/IOT Core Lite is available on the given link. Check your registered Email for invite mail with first login credential.</p>
+<p>Now, the your instance of IoT Core/Core Lite is available on the given link. Check your registered Email for invite mail with first login credential.</p>
 <p>i) Enter the URL provided in your browser. Use the registered Email and password sent on email to login.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO%20WebUI%20UP.png" alt="" width="800" height="419" /></p>
 <p>j) You will be prompted to change the password.</p>
@@ -83,7 +83,7 @@
 <p>k) Now the platform is ready for use.</p>
 <p><img src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/2%20DO%20Platform%20Ready.png" alt="" width="800" height="419" /></p>
 <h2>About vitalpointz,Inc</h2>
-<p>vitalpointz is a software maker that specializes on developing and offering IOT platform softwares &amp; services. IOT Devices and sensors can be registered on the IOT Platform and on-boarded securely. IOT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IOT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IOT Platform also bundles various device agents.</p>
+<p>vitalpointz is a software maker that specializes on developing and offering IoT platform softwares &amp; services. IoT Devices and sensors can be registered on the IoT Platform and on-boarded securely. IoT devices can send or receive data securely, application can be built, Over-the Air software updates can be rolled out to the devices at scale. Vitalpointz IoT Platform also provides various interface methods to transfer the data to external third-party tools and platforms, if so desired. Vitalpointz IoT Platform also bundles various device agents.</p>
 <p>For more information about our product please check our product documentation here.</p>
 <p>If you have any enquires, reach out to us via email : <em><a href="mailto:info@vitalpointz.net">info@vitalpointz.net</a></em></p>
 
