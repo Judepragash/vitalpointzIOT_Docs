@@ -27,9 +27,23 @@ font-family: sans-serif;
 <h1>Whats New!</h1>
 <div>
 <h3 class="MsoNormal"><span class="SpellE">New Features</span></h3>
-<h4>&nbsp;</h4>
 <h4>Introducing Comprehensive Device Cert Authority Capabilities<span class="SpellE"><br /></span></h4>
-~~~lorem ipsum ~~~<br />
+</div>
+<div>We are introducing vitalpointz Root CA for exclusively signing Device certificates. our vMIST Server becomes our Level1 Intermediate CA and every one of your vitalpointz IoT Core Lite instance is actually a Level2 Intermediate CA from where device and fognode certificates are signed and distributed.&nbsp;</div>
+<div>&nbsp;</div>
+<p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/5.VPZ-DevCA-1.jpg" alt="" width="500" height="419" /></p>
+<p>&nbsp;</p>
+<div>This release also supports your own Enterprise CA (or) External Offline Root CA. In this scenario, the IoT Core Lite instance becomes Intermediary CA to the external Root CA. Device and Fognode certificates are signed and derived from the IoT Core Lite Platform as in default scenario.</div>
+<p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/6.VPZ-DevCA-2.jpg" alt="" width="500" height="419" /></p>
+<div>&nbsp;Note: All web UI facing APIs are continue to be protected using Letsencrypt Certificate.</div>
+<div>This feature only impacts the Device certificates and Device facing services.</div>
+<div>&nbsp;</div>
+<div>See <a href="https://www.slideshare.net/JudePragashVedam/1-device-onboarding" target="_blank" rel="noopener">here</a> for quick guide on API documentation.</div>
+<div>&nbsp;</div>
+<h4>Setting up Security regime</h4>
+<div>&nbsp;</div>
+<div>selec</div>
+<div><br />
 <h4><span class="SpellE">Policy Tab<br /></span></h4>
 <p>New Policy tab is introduced in this build. Policies can be created using 'create new policy' menu.</p>
 <p>Once created, they can be viewed as cards. Polices are managed using menu available in every card.</p>
