@@ -12,9 +12,10 @@ font-family: sans-serif;
 <body>
 <p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" />&nbsp;</p>
 <div>
+<p><img style="width: 200px; margin: 24px 0;" src="https://github.com/Judepragash/vitalpointzIOT_Docs/raw/master/vplogo.png" alt="vitalpointz logo" />&nbsp;</p>
+<div>
 <div>
 <h2><span class="SpellE">vitalpointz</span> IoT Core Lite v1.3.0</h2>
-</div>
 </div>
 <div>
 <div>
@@ -29,11 +30,11 @@ font-family: sans-serif;
 <h3 class="MsoNormal"><span class="SpellE">New Features</span></h3>
 <h4>Introducing Comprehensive Device Cert Authority Capabilities<span class="SpellE"><br /></span></h4>
 </div>
-<div>We are introducing vitalpointz Root CA for exclusively signing Device certificates. our vMIST Server becomes our Level1 Intermediate CA and every one of your vitalpointz IoT Core Lite instance is actually a Level2 Intermediate CA from where device and fognode certificates are signed and distributed.&nbsp;</div>
+<div>Vitalpointz announces integration of &ldquo;Vitalpointz Root CA&rdquo; services as a part of vMIST server from v1.3 onwards. The CA service is exclusive to issue signing authority for device (end entity) certificate signing. Vitalpointz Root CA hosted at vMIST Server serving as a Level1 Intermediate CA. Every instance of Vitalpointz IoT Core Lite will serve as a Level2 Intermediate CA at which devices and fognode certificates are signed and distributed.</div>
 <div>&nbsp;</div>
 <p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/5.VPZ-DevCA-1.jpg" alt="" width="500" height="419" /></p>
 <p>&nbsp;</p>
-<div>This release also supports your own Enterprise CA (or) External Offline Root CA. In this scenario, the IoT Core Lite instance becomes Intermediary CA to the external Root CA. Device and Fognode certificates are signed and derived from the IoT Core Lite Platform as in default scenario.</div>
+<div>This release also enables the integration of &ldquo;Enterprise CA&rdquo; or any &ldquo;External Root CA&rdquo;. In the scenario of External CA, the IoT Core Lite instance works as an Intermediary signing authority to the external Root CA. Device and Fognode certificates are signed and derived from the IoT Core Lite Platform as in default scenario.<br /><br /></div>
 <p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/6.VPZ-DevCA-2.jpg" alt="" width="500" height="419" /></p>
 <div>&nbsp;Note: All web UI facing APIs are continue to be protected using Letsencrypt Certificate.</div>
 <div>This feature only impacts the Device certificates and Device facing services.</div>
@@ -45,14 +46,14 @@ font-family: sans-serif;
 <p>Which Certificate Root will be trusted by IoT devices in&nbsp;Vitalpointz&nbsp;IoT platform is established during the installation wizard and remain unchanged throughout the life of the&nbsp;platform.&nbsp;The standard&nbsp;Vitalpointz&nbsp;IoT platform installation wizard provides two ways to bring up the Platform CA (L2 Intermediate) namely VPZ_CA &amp; BYO_CA.&nbsp;</p>
 <p>&nbsp;</p>
 <h4>Starting with installation</h4>
-Getting your own copy of vitalpointz IoT Core Lite on your droplet is largely same as before. See <a href="https://judepragash.github.io/vitalpointzIOT_Docs/index.html">here</a> to read again.&nbsp;</div>
+Getting your own copy of vitalpointz IoT Core Lite on a <a href="https://m.do.co/c/af19e6df9ca6">digitalocean droplet</a> is largely same as before. See <a href="https://judepragash.github.io/vitalpointzIOT_Docs/index.html">here</a> to read again.&nbsp;</div>
 <div>&nbsp;</div>
 <div>Following section describes the changes introduced in the version v1.3.</div>
 <p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/a.install_1.png" alt="" width="600" height="219" /></p>
 <div>&nbsp;</div>
 <div>typing <em>install</em> will start the installation wizard.<br />
 <h4 aria-level="2"><span data-contrast="none">VPZ_CA</span><span data-ccp-props="{&quot;335559738&quot;:40}">&nbsp;</span></h4>
-<p><span data-contrast="auto">This is a&nbsp;</span><span data-contrast="auto">suitable</span><span data-contrast="auto">&nbsp;for most users</span><span data-contrast="auto">&nbsp;&amp; doesn&rsquo;t need the users to have any knowledge&nbsp;</span><span data-contrast="auto">on PKI or Digital certificate.&nbsp;</span><span data-contrast="auto">User just need to choose&nbsp;</span><span data-contrast="auto">&ldquo;</span><span data-contrast="auto">option&nbsp;</span><span data-contrast="auto">1</span><span data-contrast="auto">&rdquo;</span><span data-contrast="auto">&nbsp;on prompt &ldquo;</span><span data-contrast="auto">Would you prefer&nbsp;</span></p>
+<p><span data-contrast="auto">This is a&nbsp;</span><span data-contrast="auto">suitable</span><span data-contrast="auto">&nbsp;for most users</span><span data-contrast="auto">&nbsp;&amp; doesn&rsquo;t need the users to have any knowledge&nbsp;</span><span data-contrast="auto">on PKI or Digital certificate.&nbsp;</span><span data-contrast="auto">User just need to choose&nbsp;</span><span data-contrast="auto">&ldquo;</span><span data-contrast="auto">option&nbsp;</span><span data-contrast="auto">1</span><span data-contrast="auto">&rdquo;</span><span data-contrast="auto">&nbsp;on prompt &ldquo;</span><span data-contrast="auto">Would you prefer...." <br /></span></p>
 <p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/b.install_2.png" alt="" width="700" height="550" /></p>
 <p><span data-contrast="auto">Vitalpointz</span><span data-contrast="auto">&nbsp;PKI&nbsp;</span><span data-contrast="auto">to manage Device Certificate in this platform?&rdquo;</span><span data-contrast="auto">. Upon selecting&nbsp;</span><span data-contrast="auto">that, the installation will continue with no further question.&nbsp;</span><span data-contrast="auto">A&nbsp;</span><span data-contrast="auto">CSR is&nbsp;</span><span data-contrast="auto">generated in the background and got it signed through&nbsp;</span><span data-contrast="auto">a&nbsp;</span><span data-contrast="auto">Vitalpointz</span><span data-contrast="auto">&nbsp;</span><span data-contrast="auto">L1 intermediate available at&nbsp;</span><span data-contrast="auto">VMIST service of that Geolocation.&nbsp;</span><span data-ccp-props="{}">&nbsp;</span></p>
 <p>&nbsp;</p>
@@ -73,10 +74,11 @@ Getting your own copy of vitalpointz IoT Core Lite on your droplet is largely sa
 </div>
 <div>&nbsp;</div>
 <p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/f.install6.png" alt="" width="700" height="550" /></p>
-<div>&nbsp;<br />The&nbsp;VESPa&nbsp;agent&nbsp;that is downloadable from the platform will have its own certificate store which will contain&nbsp;the root certs necessary to access the platform&nbsp;services.&nbsp;User just need to&nbsp;download the code&nbsp;&amp; flash the IoT device. Just supply the&nbsp;auth credentials&nbsp;generated&nbsp;by platform &amp;&nbsp;the device will swiftly onboard to&nbsp;the platform.&nbsp;&nbsp;<br />Vitalpointz&nbsp;IoT platform&nbsp;doesn&rsquo;t require&nbsp;its&nbsp;users to&nbsp;have&nbsp;expertise in TLS or Digital certificate.&nbsp;At the same time if a user&nbsp;wants&nbsp;to make it a part of their existing PKI, that&rsquo;s very much doable.&nbsp;Certificate &amp; Key management is the core part of IoT security.&nbsp;Vitalpointz&nbsp;IoT platform&nbsp;offers&nbsp;a range of tools for IoT developers to design &amp; deploy their&nbsp;customized&nbsp;IoT security schemes&nbsp;effortlessly.&nbsp;&nbsp;<br /><br />
+<div>&nbsp;<br />The&nbsp;VESPa&nbsp;agent&nbsp;that is downloadable from the platform will have its own certificate store which will contain&nbsp;the root certs necessary to access the platform&nbsp;services.&nbsp;User just need to&nbsp;download the code&nbsp;&amp; flash the IoT device. Just supply the&nbsp;auth credentials&nbsp;generated&nbsp;by platform &amp;&nbsp;the device will swiftly onboard to&nbsp;the platform.&nbsp;&nbsp;</div>
+<div><br />Vitalpointz&nbsp;IoT platform&nbsp;doesn&rsquo;t require&nbsp;its&nbsp;users to&nbsp;have&nbsp;expertise in TLS or Digital certificate.&nbsp;At the same time if a user&nbsp;wants&nbsp;to make it a part of their existing PKI, that&rsquo;s very much doable.&nbsp;Certificate &amp; Key management is the core part of IoT security.&nbsp;Vitalpointz&nbsp;IoT platform&nbsp;offers&nbsp;a range of tools for IoT developers to design &amp; deploy their&nbsp;customized&nbsp;IoT security schemes&nbsp;effortlessly.&nbsp;&nbsp;<br /><br />
 <div>
 <h4><span class="SpellE">Policy Tab<br /></span></h4>
-<p>New Policy tab is introduced in this build. Policies can be created using 'create new policy' menu.</p>
+<p>New Policy tab is introduced in this build. Policies are created using 'create new policy' menu.</p>
 <p>Once created, they can be viewed as cards. Polices are managed using menu available in every card.</p>
 <p>&nbsp;</p>
 <p><img style="border: 2px solid green;" src="https://judepragash.github.io/vitalpointzIOT_Docs/Rel130/1.Policy%20Tab.png" alt="" width="800" height="419" /></p>
